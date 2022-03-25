@@ -17,22 +17,22 @@ import java.sql.Connection;
  *
  * @author Humberto
  */
-<span class="nc" id="L20">public class Banco {</span>
+<span class="fc" id="L20">public class Banco {</span>
     
 protected Connection con;
 protected PreparedStatement ps;
 
     public void abrirConexao() throws Exception {
 //    Class.forName(Constantes.DRIVER);
-<span class="nc" id="L27">        con = (Connection) DriverManager.getConnection(Constantes.URL, Constantes.USER, Constantes.PASSWORD);</span>
+<span class="fc" id="L27">        con = (Connection) DriverManager.getConnection(Constantes.URL, Constantes.USER, Constantes.PASSWORD);</span>
         
 
         
-<span class="nc" id="L31">    }</span>
+<span class="fc" id="L31">    }</span>
 
     public void fecharConexao() throws Exception{
-<span class="nc" id="L34">        con.close();</span>
-<span class="nc" id="L35">    }</span>
+<span class="fc" id="L34">        con.close();</span>
+<span class="fc" id="L35">    }</span>
    
 
     

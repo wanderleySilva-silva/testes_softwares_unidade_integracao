@@ -1,15 +1,15 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-integracao,com.ifpe.emprestimo,ControladorEmprestimo,18,0,0,0,5,0,3,0,3,0
+integracao,com.ifpe.emprestimo,ControladorEmprestimo,10,8,0,0,2,3,2,1,2,1
 integracao,com.ifpe.emprestimo,Emprestimo,0,33,0,0,0,14,0,7,0,7
-integracao,com.ifpe.item,ControladorItem,18,0,0,0,5,0,3,0,3,0
-integracao,com.ifpe.item,Item,23,0,0,0,10,0,5,0,5,0
-integracao,com.ifpe.ado.emprestimo,RepositorioEmprestimo,123,0,0,0,33,0,3,0,3,0
-integracao,com.ifpe.ado.item,RepositorioItem,122,0,0,0,33,0,3,0,3,0
+integracao,com.ifpe.item,ControladorItem,0,18,0,0,0,5,0,3,0,3
+integracao,com.ifpe.item,Item,8,15,0,0,4,6,2,3,2,3
+integracao,com.ifpe.ado.emprestimo,RepositorioEmprestimo,111,12,0,0,29,4,2,1,2,1
+integracao,com.ifpe.ado.item,RepositorioItem,40,82,0,0,5,28,0,3,0,3
 integracao,com.ifpe.ts.testes.piramide,App,7,0,0,0,3,0,2,0,2,0
-integracao,com.ifpe.facade,Facade,48,0,0,0,11,0,7,0,7,0
-integracao,com.ifpe.ado.professor,RepositorioProfessor,120,0,0,0,33,0,3,0,3,0
-integracao,com.ifpe.conexaodb,Banco,14,0,0,0,5,0,3,0,3,0
-integracao,com.ifpe.excecoes,TelefoneInvalidoException,4,0,0,0,2,0,1,0,1,0
+integracao,com.ifpe.facade,Facade,10,38,0,0,2,9,2,5,2,5
+integracao,com.ifpe.ado.professor,RepositorioProfessor,48,72,0,0,6,27,0,3,0,3
+integracao,com.ifpe.conexaodb,Banco,0,14,0,0,0,5,0,3,0,3
+integracao,com.ifpe.excecoes,TelefoneInvalidoException,0,4,0,0,0,2,0,1,0,1
 integracao,com.ifpe.excecoes,SiapeInvalidoException,4,0,0,0,2,0,1,0,1,0
 integracao,com.ifpe.view,Frame.new ActionListener() {...},69,0,4,0,17,0,4,0,2,0
 integracao,com.ifpe.view,Frame.new ActionListener() {...},25,0,2,0,9,0,3,0,2,0
@@ -21,7 +21,7 @@ integracao,com.ifpe.view,BackgrpundPane,3,0,0,0,1,0,1,0,1,0
 integracao,com.ifpe.view,Frame.MenuAction,15,0,0,0,5,0,2,0,2,0
 integracao,com.ifpe.view,Frame.new ActionListener() {...},65,0,2,0,18,0,3,0,2,0
 integracao,com.ifpe.view,Frame,584,0,0,0,126,0,9,0,9,0
-integracao,com.ifpe.professor,ControladorProfessor,18,0,0,0,5,0,3,0,3,0
-integracao,com.ifpe.professor,Professor,15,67,4,4,3,25,5,9,1,9
-integracao,com.ifpe.utils,Constantes,15,0,0,0,6,0,2,0,2,0
+integracao,com.ifpe.professor,ControladorProfessor,0,18,0,0,0,5,0,3,0,3
+integracao,com.ifpe.professor,Professor,10,72,2,6,2,26,3,11,1,9
+integracao,com.ifpe.utils,Constantes,6,9,0,0,2,4,1,1,1,1
 integracao,com.ifpe.utils,DbUtils,103,0,6,0,27,0,9,0,6,0

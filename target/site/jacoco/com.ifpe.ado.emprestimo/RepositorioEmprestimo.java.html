@@ -18,10 +18,10 @@ import java.util.logging.Logger;
  *
  * @author Aluno
  */
-<span class="nc" id="L21">public class RepositorioEmprestimo extends Banco implements IRepositorioEmprestimo {</span>
-<span class="nc" id="L22">    int status = 0;</span>
-<span class="nc" id="L23">    String query = &quot;INSERT INTO emprestimo(siapeProf, codItem, dataEmp)&quot; + &quot;VALUES (?, ?, ?)&quot;;</span>
-<span class="nc" id="L24">    String queryRemove = &quot;DELETE FROM emprestimo WHERE codigo = ?&quot;;</span>
+<span class="fc" id="L21">public class RepositorioEmprestimo extends Banco implements IRepositorioEmprestimo {</span>
+<span class="fc" id="L22">    int status = 0;</span>
+<span class="fc" id="L23">    String query = &quot;INSERT INTO emprestimo(siapeProf, codItem, dataEmp)&quot; + &quot;VALUES (?, ?, ?)&quot;;</span>
+<span class="fc" id="L24">    String queryRemove = &quot;DELETE FROM emprestimo WHERE codigo = ?&quot;;</span>
     
     @Override
     public int efetuarEmprestimo(Emprestimo e) {

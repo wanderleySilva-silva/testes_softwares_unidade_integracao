@@ -17,63 +17,63 @@ import java.util.logging.Logger;
  *
  * @author Humberto
  */
-<span class="nc" id="L20">public class RepositorioItem extends Banco implements IRepositorioItem{</span>
-<span class="nc" id="L21">    int status = 0;</span>
-<span class="nc" id="L22">    String query = &quot;INSERT INTO item(codigo, tipo)&quot; + &quot;VALUES (?, ?)&quot;;</span>
-<span class="nc" id="L23">    String queryRemove = &quot;DELETE FROM item WHERE codigo = ?&quot;;</span>
+<span class="fc" id="L20">public class RepositorioItem extends Banco implements IRepositorioItem{</span>
+<span class="fc" id="L21">    int status = 0;</span>
+<span class="fc" id="L22">    String query = &quot;INSERT INTO item(codigo, tipo)&quot; + &quot;VALUES (?, ?)&quot;;</span>
+<span class="fc" id="L23">    String queryRemove = &quot;DELETE FROM item WHERE codigo = ?&quot;;</span>
     
     @Override
     public int inserir(Item i) {
         try {
-<span class="nc" id="L28">            super.abrirConexao();</span>
-<span class="nc" id="L29">        } catch (Exception ex) {</span>
+<span class="fc" id="L28">            super.abrirConexao();</span>
+<span class="pc" id="L29">        } catch (Exception ex) {</span>
 <span class="nc" id="L30">            Logger.getLogger(RepositorioItem.class.getName()).log(Level.SEVERE, null, ex);</span>
         }
-<span class="nc" id="L32">         PreparedStatement ps = null;</span>
+<span class="fc" id="L32">         PreparedStatement ps = null;</span>
                
         try {
-<span class="nc" id="L35">            ps = con.prepareStatement(query);</span>
-<span class="nc" id="L36">            ps.setString(1, i.getCodigoItem());</span>
-<span class="nc" id="L37">            ps.setString(2, i.getTipoItem());</span>
-<span class="nc" id="L38">            status = ps.executeUpdate();</span>
-<span class="nc" id="L39">            System.out.println(status);</span>
-<span class="nc" id="L40">        } catch (SQLException ex) {</span>
-<span class="nc" id="L41">            Logger.getLogger(RepositorioItem.class.getName()).log(Level.SEVERE, null, ex);</span>
+<span class="fc" id="L35">            ps = con.prepareStatement(query);</span>
+<span class="fc" id="L36">            ps.setString(1, i.getCodigoItem());</span>
+<span class="fc" id="L37">            ps.setString(2, i.getTipoItem());</span>
+<span class="fc" id="L38">            status = ps.executeUpdate();</span>
+<span class="fc" id="L39">            System.out.println(status);</span>
+<span class="fc" id="L40">        } catch (SQLException ex) {</span>
+<span class="fc" id="L41">            Logger.getLogger(RepositorioItem.class.getName()).log(Level.SEVERE, null, ex);</span>
         } 
         
          try {
-<span class="nc" id="L45">            super.fecharConexao();</span>
-<span class="nc" id="L46">        } catch (Exception ex) {</span>
+<span class="fc" id="L45">            super.fecharConexao();</span>
+<span class="pc" id="L46">        } catch (Exception ex) {</span>
 <span class="nc" id="L47">            Logger.getLogger(RepositorioItem.class.getName()).log(Level.SEVERE, null, ex);</span>
         }
-<span class="nc" id="L49">         return status;</span>
+<span class="fc" id="L49">         return status;</span>
     }
 
     @Override
     public int remover(String codigo) {
-<span class="nc" id="L54">       int status = 0;</span>
+<span class="fc" id="L54">       int status = 0;</span>
         try {
-<span class="nc" id="L56">            super.abrirConexao();</span>
-<span class="nc" id="L57">        } catch (Exception ex) {</span>
+<span class="fc" id="L56">            super.abrirConexao();</span>
+<span class="pc" id="L57">        } catch (Exception ex) {</span>
 <span class="nc" id="L58">            Logger.getLogger(RepositorioItem.class.getName()).log(Level.SEVERE, null, ex);</span>
         }
         
-<span class="nc" id="L61">        PreparedStatement ps = null;</span>
+<span class="fc" id="L61">        PreparedStatement ps = null;</span>
                
         try {
-<span class="nc" id="L64">            ps = con.prepareStatement(queryRemove);</span>
-<span class="nc" id="L65">            ps.setString(1, codigo);</span>
-<span class="nc" id="L66">            status = ps.executeUpdate();</span>
-<span class="nc" id="L67">        } catch (SQLException ex) {</span>
+<span class="fc" id="L64">            ps = con.prepareStatement(queryRemove);</span>
+<span class="fc" id="L65">            ps.setString(1, codigo);</span>
+<span class="fc" id="L66">            status = ps.executeUpdate();</span>
+<span class="pc" id="L67">        } catch (SQLException ex) {</span>
 <span class="nc" id="L68">            Logger.getLogger(RepositorioItem.class.getName()).log(Level.SEVERE, null, ex);</span>
         }   
         
         try {
-<span class="nc" id="L72">            super.fecharConexao();</span>
-<span class="nc" id="L73">        } catch (Exception ex) {</span>
+<span class="fc" id="L72">            super.fecharConexao();</span>
+<span class="pc" id="L73">        } catch (Exception ex) {</span>
 <span class="nc" id="L74">            Logger.getLogger(RepositorioItem.class.getName()).log(Level.SEVERE, null, ex);</span>
         }
-<span class="nc" id="L76">        return status;</span>
+<span class="fc" id="L76">        return status;</span>
     }
     
 }

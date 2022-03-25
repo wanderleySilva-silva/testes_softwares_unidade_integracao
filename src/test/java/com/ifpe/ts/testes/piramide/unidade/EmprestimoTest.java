@@ -12,7 +12,7 @@ public class EmprestimoTest {
 	
 	@Before
 	public void init() {
-		emprestimo = new Emprestimo("1234587", "78456", "21/03/2022");
+		emprestimo = new Emprestimo("1234587", "78456", "15/02/2022");
 	}
 	
 	@Test
@@ -27,7 +27,7 @@ public class EmprestimoTest {
 	
 	@Test
 	public void dataEmprestimoTest() {
-		assertTrue(emprestimo.getData() == "21/03/2022");
+		assertTrue(emprestimo.getData() == "11/03/2022");
 	}
 	
 	@Test
@@ -46,7 +46,7 @@ public class EmprestimoTest {
 	
 	@Test
 	public void setDataTest() {
-		String data = "19/02/2022";
+		String data = "25/02/2022";
 		emprestimo.setData(data);
 		assertTrue(true);
 	}

@@ -22,8 +22,8 @@ public class Professor {
     
 <span class="fc" id="L23">    public Professor(String nome, String telefone, String siape) throws TelefoneInvalidoException, SiapeInvalidoException{</span>
 <span class="fc" id="L24">        this.nome = nome;</span>
-<span class="pc bpc" id="L25" title="1 of 2 branches missed.">        if(!validaNumTelefone(telefone)) {</span>
-<span class="nc" id="L26">            throw new TelefoneInvalidoException(&quot;Telefone inv�lido!&quot;);</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">        if(!validaNumTelefone(telefone)) {</span>
+<span class="fc" id="L26">            throw new TelefoneInvalidoException(&quot;Telefone inv�lido!&quot;);</span>
         } else {
 <span class="fc" id="L28">            this.telefone = telefone;</span>
 <span class="pc bpc" id="L29" title="1 of 2 branches missed.">        } if(!validaSiape(siape)) {</span>
@@ -80,7 +80,7 @@ public class Professor {
 <span class="fc" id="L80">        CharSequence inputStr = phoneNumber;</span>
 <span class="fc" id="L81">        Pattern pattern = Pattern.compile(expression);</span>
 <span class="fc" id="L82">        Matcher matcher = pattern.matcher(inputStr);</span>
-<span class="pc bpc" id="L83" title="1 of 2 branches missed.">        if(matcher.matches()){</span>
+<span class="fc bfc" id="L83" title="All 2 branches covered.">        if(matcher.matches()){</span>
 <span class="fc" id="L84">            isValid = true;</span>
         } 
 <span class="fc" id="L86">        return isValid;</span>

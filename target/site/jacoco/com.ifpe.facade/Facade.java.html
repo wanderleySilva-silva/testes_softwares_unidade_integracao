@@ -22,30 +22,30 @@ public class Facade implements IFacade{
     private ControladorItem controlItem;
     private ControladorEmprestimo controlEmprestimo;
     
-<span class="nc" id="L25">    public Facade() {</span>
-<span class="nc" id="L26">        controlProfessor = new ControladorProfessor();</span>
-<span class="nc" id="L27">        controlItem = new ControladorItem();</span>
-<span class="nc" id="L28">        controlEmprestimo = new ControladorEmprestimo();</span>
-<span class="nc" id="L29">    }</span>
+<span class="fc" id="L25">    public Facade() {</span>
+<span class="fc" id="L26">        controlProfessor = new ControladorProfessor();</span>
+<span class="fc" id="L27">        controlItem = new ControladorItem();</span>
+<span class="fc" id="L28">        controlEmprestimo = new ControladorEmprestimo();</span>
+<span class="fc" id="L29">    }</span>
 
     @Override
     public int inserirProfessor(Professor p) {
-<span class="nc" id="L33">        return controlProfessor.inserir(p);</span>
+<span class="fc" id="L33">        return controlProfessor.inserir(p);</span>
     }
 
     @Override
     public int removerProfessor(String siape) {
-<span class="nc" id="L38">        return controlProfessor.remover(siape);</span>
+<span class="fc" id="L38">        return controlProfessor.remover(siape);</span>
     }
 
     @Override
     public int inserirItem(Item i) {
-<span class="nc" id="L43">       return controlItem.inserir(i);</span>
+<span class="fc" id="L43">       return controlItem.inserir(i);</span>
     }
 
     @Override
     public int removerItem(String codigo) {
-<span class="nc" id="L48">        return controlItem.remover(codigo);</span>
+<span class="fc" id="L48">        return controlItem.remover(codigo);</span>
     }
 
     @Override
